@@ -1,58 +1,150 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Dante's Inferno",
+    "Credits": "Adapted by Dylan Boyer (djboyer@ucsc.edu).",
+    "InitialLocation": "Woods",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Woods": {
+            "Body": "In the dim woods, where the straight way was lost, you meet Virgil, your guide. His presence, firm yet ethereal, promises wisdom and protection. He offers to lead you through the depths of Hell to salvation. His voice is calm, a contrast to the chaos that awaits.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Follow Virgil",
+                    "Target": "Gates of Hell"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Gates of Hell": {
+            "Body": "You stand before the gates towering ominously, with the haunting inscription: 'Abandon all hope, ye who enter here.' As the gates creak open, a gust of infernal air envelops you, carrying wails of the damned. You step forward, the path behind vanishes, urging you onward.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Decend to the first circle of hell",
+                    "Target": "Limbo"
+                }
+            ]
+        },
+        "Limbo": {
+            "Body": "A soft, mournful echo fills this circle, home to the unbaptized and virtuous pagans. They reside in a somber castle with no torments, save their eternal separation from divine grace. Philosophers and scholars debate fruitlessly, their wisdom now hollow.",
+            "Choices": [
+                {
+                    "Text": "Decend to the second circle of hell",
+                    "Target": "Lust"
+                }
+            ]
+        },
+        "Lust": {
+            "Body": "Furious winds whip through this realm, ceaselessly tossing the souls of the lustful. Their cries blend with the tempest, mirroring their earthly tempests of passion. Here, lovers are forever entwined in a relentless storm, their desires as unending as their punishment.",
+            "Choices": [
+                {
+                    "Text": "Decend to the third circle of hell",
+                    "Target": "Gluttony"
+                }
+            ]
+        },
+        "Gluttony": {
+            "Body": "You wade through vile slush under a cold, ceaseless rain. Grotesque shades wallow here; their appearance as decayed as their indulgence. A monstrous three-headed dog, Cerberus, guards them, its howls as loathsome as the souls it watches over.",
+            "Choices": [
+                {
+                    "Text": "Decend to the fourth circle of hell",
+                    "Target": "Greed"
+                }
+            ]
+        },
+        "Greed": {
+            "Body": "The clashing of heavy weights resounds as the greedy push and pull massive boulders in futile labor. Their avarice binds them to an eternal stalemate of jousting fortunes, a relentless echo of their earthly greed.",
+            "Choices": [
+                {
+                    "Text": "Decend to the fifth circle of hell",
+                    "Target": "Wrath"
+                }
+            ]
+        },
+        "Wrath": {
+            "Body": "The Stygian marsh holds the wrathful who fight each other on the murky waters. Below the surface, the sullen and gloomy gurgle, trapped in the sticky mud. Their anger drowns with them, unseen but ever present.",
+            "Choices": [
+                {
+                    "Text": "Decend to the sixth circle of hell",
+                    "Target": "Heresy"
+                }
+            ]
+        },
+        "Heresy": {
+            "Body": "Flames engulf the heretics, confined within fiery tombs. Their defiant cries are muffled by the crackle of the infernos that encase them. The air is thick with the smell of burning flesh and the heat of their misguided convictions.",
+            "Choices": [
+                {
+                    "Text": "Decend to the seventh circle of hell",
+                    "Target": "Violence"
+                }
+            ]
+        },
+        "Violence": {
+            "Body": "Divided into three rings with sufferers of violence against others, self, and God/nature. Bloodred rivers, desolate lands, and a rain of fire envelop the violent, each punishment fitting their sins like a dark mirror of their lives. Upon the second ring you see an ominous forest. The forest seems to call out to you.",
+            "Choices": [
+                {
+                    "Text": "Decend to the eighth circle of hell",
+                    "Target": "Fraud"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Traverse the second ring...",
+                    "Target": "SecondRing"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "SecondRing": {
+            "Body": "Virgil explain that you are in the forest of suicide and that each tree is a soul who commited violence against themselves in life. Before you stands a tree with three cuts on its trunk. From the trunk spills crimson blood.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Decend to the eighth circle of hell...",
+                    "Target": "Fraud"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Touch the bleeding tree...",
+                    "Action": "touchTree",
+                    "Target": "SecondRing"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Fraud": {
+            "Body": "The Malebolge, ten ditches of stone, teem with deceivers, each ditch a unique torment for different kinds of fraud. Demons patrol ruthlessly, ensuring the deceitful suffer fully the complexities of their schemes turned against them.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Decend to the nineth circle of hell",
+                    "Target": "Treachery"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Treachery": {
+            "Body": "Encased in ice, traitors endure the coldest abandonment, as far removed from warmth and light as their betrayals removed them from human warmth. Here, even time seems frozen, and the deepest silence underscores their isolation.",
+            "Choices": [
+                {
+                    "Text": "Decend to the core of hell",
+                    "Target": "Core of Hell"
+                }
+            ]
+        },
+        "Core of Hell": {
+            "Body": "You are in the frozen core of Hell, Lucifers massive form looms before you.",
+            "Choices": [
+                {
+                    "Text": "Climb Lucifer's leg",
+                    "Target": "The Other Side of the World",
+                    "NeedsKey": "LuciferKey",
+                    "LockedMessage": "An otherworldly force prevents you from approaching Lucifer.",
+                    "Target2": "Core of Hell"
+                },
+                {
+                    "Text": "Speak to Lucifer",
+                    "Key": "LuciferKey",
+                    "KeyText": "Lucifer speaks to you in a tongue you do not understand. Virgil explains that he has granted you permission to leave Hell.",
+                    "Target": "Core of Hell"
+                }
+            ]
+        },
+        "The Other Side of the World": {
+            "Body": "You emerge on the other side of the world, where the stars of the Southern Hemisphere glisten—a symbol of hope and the arduous path to redemption now behind you."
         }
     }
 }
+
+
+
+
+
